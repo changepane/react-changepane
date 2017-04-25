@@ -5,5 +5,15 @@
   "main": "dist/index.js",
   "repository": "https://github.com/changepane/react-changepane",
   "author": "@changepane",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "dev": "start-storybook -p 9001 -c .storybook"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^2.35.3"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
 }
