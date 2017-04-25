@@ -1,0 +1,9 @@
+{
+  "name": "react-changepane",
+  "version": "0.0.1",
+  "description": "Display changelogs in your react app",
+  "main": "dist/index.js",
+  "repository": "https://github.com/changepane/react-changepane",
+  "author": "@changepane",
+  "license": "BSD-3-Clause"
+}
