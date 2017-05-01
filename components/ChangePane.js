@@ -5,7 +5,12 @@ const CHANGEPANE_JS = process.env.STORYBOOK_CHANGEPANE_JS || 'https://cdn.change
 
 class ChangePane extends Component {
   static propTypes = {
-    apiUrl: PropTypes.string.isRequired
+    apiUrl: PropTypes.string.isRequired,
+    badgeStyle: PropTypes.oneOf(['Dot', 'PulsatingDot', 'Badge'])
+  };
+
+  static defaultProps = {
+    badgeStyle: 'Dot'
   };
 
   componentDidMount() {
@@ -19,7 +24,8 @@ class ChangePane extends Component {
 
     window.ChangePane('render', {
       apiUrl: this.props.apiUrl,
-      root: this.root
+      root: this.root,
+      badgeStyle: this.props.badgeStyle
     });
   }
 

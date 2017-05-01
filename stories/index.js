@@ -10,4 +10,15 @@ storiesOf('ChangePane', module)
     <p>
       Recent updates <ChangePane apiUrl="https://changepane.changepane.com/v1/1" />
     </p>
+  ))
+  .add('pulsating dot', () => (
+    <ChangePane
+      apiUrl="https://changepane.changepane.com/v1/1"
+      badgeStyle="PulsatingDot"
+    />
+  )).add('badge', () => (
+    <ChangePane
+      apiUrl="https://changepane.changepane.com/v1/1"
+      badgeStyle="Badge"
+    />
   ));
