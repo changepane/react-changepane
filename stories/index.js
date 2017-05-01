@@ -1,10 +1,13 @@
 import React from 'react';
 import {storiesOf, action} from '@kadira/storybook';
+import ChangePane from '../components/ChangePane';
 
-storiesOf('Button', module)
-  .add('with text', () => (
-    <button onClick={action('clicked')}>Hello Button</button>
+storiesOf('ChangePane', module)
+  .add('default', () => (
+    <ChangePane apiUrl="https://changepane.changepane.com/v1/1" />
   ))
-  .add('with some emoji', () => (
-    <button onClick={action('clicked')}>😀 😎 👍 💯</button>
+  .add('inline', () => (
+    <p>
+      Recent updates <ChangePane apiUrl="https://changepane.changepane.com/v1/1" />
+    </p>
   ));
